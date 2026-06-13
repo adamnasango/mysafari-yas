@@ -1,0 +1,130 @@
+.bus-list {
+  padding: 20px 24px;
+}
+
+.bus-card {
+  background: var(--white);
+  border-radius: var(--radius-xl);
+  overflow: hidden;
+  margin-bottom: 24px;
+  box-shadow: var(--shadow-card);
+}
+
+.bus-card img {
+  width: 100%;
+  display: block;
+  aspect-ratio: 16 / 9;
+  object-fit: cover;
+}
+
+.bus-body {
+  padding: 16px 20px 20px;
+  color: var(--primary);
+}
+
+.bus-top {
+  display: flex;
+  justify-content: space-between;
+  font-size: 16px;
+  font-weight: 500;
+  color: var(--label);
+  padding-bottom: 12px;
+}
+
+.bus-top + hr,
+.bus-middle + hr {
+  border: none;
+  border-top: 1px solid #eef2f7;
+  margin: 0;
+}
+
+.bus-middle {
+  display: grid;
+  grid-template-columns: 1fr auto 1fr;
+  align-items: start;
+  gap: 8px;
+  padding: 16px 0;
+}
+
+.bus-middle label {
+  font-size: 13px;
+  color: var(--label);
+  display: block;
+  margin-bottom: 4px;
+}
+
+.bus-middle h3 {
+  font-size: 28px;
+  font-weight: 800;
+  color: var(--primary);
+  line-height: 1;
+}
+
+.bus-middle p {
+  font-size: 14px;
+  color: var(--text-muted);
+  margin-top: 2px;
+}
+
+.bus-middle .departure-time,
+.bus-middle .arrival-time {
+  display: block;
+  font-size: 15px;
+  font-weight: 600;
+  color: var(--primary);
+  margin-top: 6px;
+}
+
+.bus-endpoint--right {
+  text-align: right;
+}
+
+.center-bus {
+  text-align: center;
+  padding-top: 18px;
+}
+
+.center-bus .seats-remain {
+  font-size: 13px;
+  font-weight: 600;
+  color: var(--primary);
+  margin-bottom: 8px;
+}
+
+.bus-circle {
+  width: 52px;
+  height: 52px;
+  background: var(--secondary);
+  border-radius: 50%;
+  margin: 0 auto 8px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: var(--white);
+}
+
+.bus-circle .material-symbols-outlined {
+  font-size: 24px;
+}
+
+.center-bus .travel-date {
+  font-size: 13px;
+  font-weight: 500;
+  color: var(--text-muted);
+}
+
+.bus-features {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 16px;
+  font-size: 15px;
+  font-weight: 600;
+  color: var(--primary);
+  padding: 14px 0;
+}
+
+.bus-features i {
+  font-size: 18px;
+  color: var(--primary);
+}
