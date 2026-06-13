@@ -1,0 +1,53 @@
+:root {
+  --primary: #073B88;
+  --secondary: #6A9BD0;
+  --secondary-light: #A7C7E7;
+  --surface: #F3F5F8;
+  --surface-alt: #F0F4F8;
+  --surface-input: #F0F4F8;
+  --accent: #FFD400;
+  --text: #073B88;
+  --text-muted: #335f9b;
+  --label: #9aa9c3;
+  --label-light: #b0bdd0;
+  --white: #ffffff;
+  --danger: #D32F2F;
+  --danger-light: #ffebeb;
+  --success: #2E9E5B;
+  --bus-price: #5D9BCE;
+  --shadow-card: 0 4px 24px rgba(7, 59, 136, 0.08);
+  --shadow-day: 0 2px 8px rgba(7, 59, 136, 0.06);
+  --radius-sm: 10px;
+  --radius-md: 16px;
+  --radius-lg: 24px;
+  --radius-xl: 28px;
+  --header-height: 120px;
+  --header-compact: 72px;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Figtree', sans-serif;
+  background: var(--primary);
+  color: var(--white);
+  -webkit-font-smoothing: antialiased;
+}
+
+a {
+  text-decoration: none;
+}
+
+button {
+  font-family: inherit;
+  cursor: pointer;
+}
+
+.material-symbols-outlined {
+  font-size: 34px;
+  font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+}

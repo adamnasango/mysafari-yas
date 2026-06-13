@@ -1,0 +1,79 @@
+.app-container {
+  max-width: 430px;
+  margin: 0 auto;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+.app-header {
+  height: var(--header-height);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 24px;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.15);
+  flex-shrink: 0;
+}
+
+.app-header h1 {
+  font-size: 32px;
+  font-weight: 700;
+  color: var(--white);
+}
+
+.app-header--compact {
+  height: var(--header-compact);
+  justify-content: flex-start;
+  gap: 12px;
+  padding: 0 20px;
+}
+
+.app-header--compact h1 {
+  font-size: 22px;
+  font-weight: 700;
+}
+
+.app-header--ticket {
+  height: var(--header-compact);
+  justify-content: flex-start;
+  gap: 12px;
+  padding: 0 20px;
+  border-bottom: none;
+}
+
+.app-header--ticket h1 {
+  font-size: 22px;
+  font-weight: 600;
+}
+
+.icon-btn {
+  background: none;
+  border: none;
+  color: var(--accent);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0;
+  line-height: 1;
+}
+
+.page-content {
+  flex: 1;
+  padding-bottom: 24px;
+}
+
+.page-content--flush {
+  padding-bottom: 0;
+}
+
+
+:root{
+  --sticky-footer-height: 110px;
+}
+.app-header{
+ position:sticky; top:0; z-index:1000; background:var(--primary);
+ height:88px;
+}
+.app-header h1{font-size:22px;display:flex;align-items:center;height:100%;margin:0;}
+.page-content{overflow-y:auto; padding-bottom:calc(var(--sticky-footer-height) + 24px);}
